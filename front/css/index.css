@@ -1,0 +1,100 @@
+#section1{    
+    background: linear-gradient(to bottom, rgb(35, 34, 43), rgb(25, 3, 25));
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;    
+}
+
+.leftcontent{
+    width: 50%;
+    padding: 20px 0px; 
+}
+
+.sectionTitle{
+    font-size: 60px;
+}
+
+.contentDesc{
+    font-size: 18px;
+    color: gray;
+}
+
+#imgSection1{
+    align-self: center;
+    float: right;
+    min-width: 300px;
+    width: 40% ;
+}
+
+#imgSection2{
+    align-self: center;
+    float: right;
+    min-width: 300px;
+    width: 30% ;
+}
+
+.intextBtn{
+    font-size: 15px;
+    color: white;
+    background-color: purple;
+    border-radius: 5px;
+    border: 2px solid purple;
+    padding: 10px;   
+}
+
+.intextBtn:hover{
+    background-color: transparent;
+    color: purple;
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+    border: 2px solid purple;
+}
+
+.smallImg{
+    padding: 10px;
+    max-height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: #33314d;
+}
+
+.smallImg:hover{
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    filter: brightness(50%);
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0px;
+    justify-content: center;
+}
+
+#section2{
+    height: fit-content;
+    background-color: black;
+}
+
+.tag{
+    font-size: 18px;
+    color: purple;
+}
+
+@media screen and (max-width: 800px){   
+    .content{
+        justify-content: space-around;
+    } 
+    .leftcontent{
+        width: 100%;
+    }
+    #section2{
+        max-height: none;
+        height: fit-content; 
+    }
+}

@@ -1,0 +1,77 @@
+body {
+    background: linear-gradient(to bottom, rgb(35, 34, 43), rgb(25, 3, 25));
+}
+
+.form-container {
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgb(121, 103, 124);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+form {
+    display: none;
+    flex-direction: column;
+}
+
+.form-switch {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.switch-btn {
+    padding: 10px 20px;
+    background-color: #6b5cb8;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.active-switch-btn {
+    background-color: #6c6398;
+    border: 3px solid #4e4774;
+    padding: 6px 16px;
+    margin: 1px;
+}
+
+.switch-btn:hover {
+    background-color: #7465bf;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    padding: 10px;
+    background-color: #6b5cb8;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #7465bf;
+}
+
+.active-form {
+    display: flex;
+}

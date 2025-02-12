@@ -1,0 +1,139 @@
+html{
+    scroll-behavior: smooth;
+    min-height: 100%;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    color: lightgray;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.simpleNav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    box-sizing: border-box; 
+}
+
+.sideNav{
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: rgb(36, 0, 35);
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 10px;
+    opacity: 97%;
+}
+
+#btnSideBar{
+    display: none;
+    color: purple;
+    background-color: transparent;
+    border-radius: 50%;
+    font-size: 30px; 
+    font-weight: bold;
+    rotate: 90deg;
+    border: none;
+}
+
+#btnSideBar:hover{
+    cursor: pointer;
+}
+
+#logo{
+    color: purple;
+    font-size: 28px;
+}
+
+h1{
+    font-size: 50px;
+}
+
+#navList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-items: center;
+    gap: 20px;
+    font-size: 16px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+li{    
+    list-style: none;
+}
+
+li:hover{
+    filter: brightness(150%);
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+}
+
+.btn{
+    color: purple;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid purple;
+    padding: 3px 10px;  
+    font-size: 16px; 
+    font-weight: bold;
+}
+
+.btn:hover{
+    background-color: purple;
+    color: white;
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+}
+
+.btn.inactive-btn{
+    display: none;
+}
+
+.section{    
+    padding: 0px 5%;
+}
+
+footer{
+    background-color: rgb(36, 0, 35);
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 14px;
+}
+
+.warning-msg{
+    color: red;
+    font-size: 14px;
+    align-self: center;
+}
+
+@media screen and (max-width: 800px){
+    #btnSideBar{
+        display: flex;  
+    }
+    #navList{
+        display: none;
+        flex-direction: column;
+        gap: 10px;  
+        align-items: center;   
+        padding: 0px;
+    }
+} 
